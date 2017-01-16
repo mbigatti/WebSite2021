@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta name="keywords" content="" />
+	<meta name="description" content="Massimiliano Bigatti Personal Website" />
+	<meta name="author" content="Massimiliano Bigatti" />
+	<meta name="copyright" content="&copy; Copyright 2014-2017 Massimiliano Bigatti" />
+	<meta property="og:title" content="Massimiliano Bigatti personal website"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="http://bigatti.it/mstile-150x150.png"/>
+	<meta property="og:description" content="Massimiliano Bigatti personal website" />
+	<meta property="twitter:card" content="summary"/>
+	<meta property="twitter:site" content="@mbigatti"/>
+	<meta property="twitter:title" content="Massimiliano Bigatti"/>
+	<meta property="twitter:description" content="Personal website"/>
+	<meta property="twitter:image" content="http://bigatti.it/mstile-150x150.png"/>
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Massimiliano Bigatti</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400|Fira+Sans+Extra+Condensed:100,300" rel="stylesheet" type="text/css">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- http://realfavicongenerator.net -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<header>
+		<div class="card">
+			<div class="card-content">
+				<img class="photo" src="images/avatar.jpeg">
+				<h1>Massimiliano Bigatti</h1>
+				<h2>Senior Software Architect, Technical Writer and UI/UX enthusiast</h2>
+				<p>
+				I design and build applications and frameworks for the Java Platform and iOS, with
+				a focus on software architecture, user interface, interaction design and user experience.
+				</p>
+				<ul>
+					<li><a href="https://twitter.com/mbigatti" target="_blank"><span class="symbol">circletwitterbird</span></a></li>
+					<li><a href="https://github.com/mbigatti" target="_blank"><span class="symbol">circlegithubalt</span></a></li>
+					<li><a href="http://stackoverflow.com/users/3734205/mxb" target="_blank"><span class="symbol">circlestackoverflow</span></a></li>
+					<li><a href="https://www.linkedin.com/in/maxbigatti" target="_blank"><span class="symbol">circlelinkedin</span></a></li>
+					<li><a href="https://www.behance.net/_mxb" target="_blank"><span class="symbol">circlebehance</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section id="books">
+		<a href="http://www.apogeonline.com/libri/9788850333660/scheda" target="_blank"><img width=310 height=444 id="9788850333660"></a>
+		<a href="http://www.apogeonline.com/libri/9788850333097/scheda" target="_blank"><img width=218 height=357 id="9788850333097"></a>
+		<a href="http://www.apogeonline.com/libri/9788850327522/scheda" target="_blank"><img width=310 height=443 id="9788850327522"></a>
+		<!--
+		<a href="http://www.hoeplieditore.it/scheda-libro/bigatti-massimiliano/uml-e-design-pattern-9788820336578-2590.html" target="_blank"><img src="images/books/978-8820336578.jpg" style="border:0"></a>
+		-->
+	</section>
+	<script>
+		var isRetina = (
+			window.devicePixelRatio > 1 ||
+			(window.matchMedia && window.matchMedia("(-webkit-min-device-pixel-ratio: 1.5),(-moz-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)").matches));
+		
+		var images = ["9788850333660", "9788850333097", "9788850327522"];
+		for (var i = 0; i < images.length; i++) {
+			var img_id = images[i];
+			document.getElementById(img_id).setAttribute('src', 'images/books/' + img_id + (isRetina ? '@2x' : '') + '.jpeg');
+		}
+	</script>
+</body>
+</html>
