@@ -1,3 +1,35 @@
+/*
+ Grid
+ */
+ 	
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-1-2 {
+	float: left;
+	width: 50%;
+}		
+
+
+/*
+ General
+ */
+ 	
 body {
 	background-color: #f0f0f0;
 	margin: 0;
@@ -29,7 +61,7 @@ header {
 	padding: 4em;
 }
 
-h1 {
+.card h1 {
 	font-family: "Montserrat";
 	font-weight: 400;
 	font-size: 32px;
@@ -37,21 +69,21 @@ h1 {
 	margin: 0;
 }
 
-h2 {
+.card h2 {
 	font-family: "Fira Sans Extra Condensed";
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 1.1em;
 }
 
-p {
+.card p {
 	font-family: "Fira Sans Extra Condensed";
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 1.2em;
 }
 
-img.photo {
+.card img.photo {
 	width: 120px;
 	height: 120px;
 	border-radius: 120px;
@@ -59,33 +91,33 @@ img.photo {
 	margin-bottom: 2em;
 }
 
-ul {
+.card ul {
     list-style-type: none;
     margin: 2em 0 0 0;
     padding: 0;
 }
 
-ul li {
+.card ul li {
 	display: inline;
 	margin-right: 1em;
 }
 
-ul li:last-child {
+.card ul li:last-child {
 	margin-right: 0;
 }
 
-ul li a,
-ul li a:visited
+.card ul li a,
+.card ul li a:visited
 {
 	color: white;
 	text-decoration: none;
 }
 
-ul li a:hover {
+.card ul li a:hover {
 	color: #CC2C00;
 }
 
-ul li span {
+.card ul li span {
 	font-size: 32px;
 	
 	-o-transition: color .3s ease-in-out;
@@ -95,6 +127,71 @@ ul li span {
 	transition: color .3s ease-in-out;
 }
 
+
+/*
+ Work section
+ */
+ 
+#work {
+	margin: 0;
+	padding: 1em 0;
+	background-color: #E5E5E5;
+	color: #333;
+				
+	font-family: "Fira Sans Extra Condensed";
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.2em;		
+	
+	text-align: center;	
+}
+
+#work ul {
+	list-style-type: none;
+	text-align: left;
+	line-height: 1.8em;
+	
+	margin-left: 0;
+	padding-left: 0;			
+}
+
+#work ul li {
+  padding-left: 1.7em;
+  text-indent: -1.7em;
+}
+
+#work ul li:before {
+	padding-right: 1.2em;
+	font-size: 0.8em;
+	content: '✔';
+}
+
+#work .col-content {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+#contact {
+	margin: 1em 0;
+	padding: 0 0.5em;
+	
+	text-align: center;
+	font-family: "Fira Sans Extra Condensed";
+	font-weight: 100;
+	font-size: 22px;
+}
+
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+
+/*
+ Books
+ */
+ 
 #books {
 	margin: 4em;
 	text-align: center;
@@ -166,6 +263,17 @@ ul li span {
 	background-size: 310px 443px;
 }
 
+footer {
+	padding: 1em;
+	
+	color: #999;
+	text-align: center;
+	
+	font-family: "Fira Sans Extra Condensed";
+	font-weight: 300;
+	font-size: 18px;
+}
+
 /*
  Mono social icon fonts
  */
@@ -220,6 +328,19 @@ a.symbol:before {
 	
 	.card-content {
 		padding: 3em 1em 1em 1em;
+	}
+	
+	#work .col-content {
+		padding: 0 0.5em;
+	}
+	
+	#work ul li {
+	  padding-left: 0.9em;
+	  text-indent: -0.9em;
+	}
+
+	#work ul li:before {
+		padding-right: 0.4em;
 	}
 	
 	section#books {
